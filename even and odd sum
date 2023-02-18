@@ -1,0 +1,26 @@
+ // even and odd sum
+ #include<stdio.h>
+int main()
+{
+	int a,b,i=1,sum1=0,sum2=0;
+	printf("Enter the value of a and b:");
+	scanf("%d%d",&a,&b);
+	while(i<=a)
+	{
+		if(i%b==0)
+		{
+			printf("%d\n",i);
+			if(i%2)
+			{
+				sum1=sum1+i;
+			}
+			else
+			{
+				sum2=sum2+i;
+			}
+		}
+		i++;
+	}
+	printf("Even total=%d\t",sum1);
+	printf("Odd total=%d",sum2);
+}
